@@ -1,23 +1,15 @@
 ﻿using System;
 using TechJobsOOAutograded;
+using TechJobsOO;
+//using Newtonsoft.Json.Linq;
 
 namespace TechJobsOO
 {
-    public class Employer
+    public class Employer : JobField
     {
-        public int Id { get; }
-        private static int nextId = 1;
-        public string Value { get; set; }
 
-        public Employer()
+        public Employer(string value) : base(value)
         {
-            Id = nextId;
-            nextId++;
-        }
-
-        public Employer(string value) : this()
-        {
-            Value = value;
         }
 
         public override bool Equals(object obj)
