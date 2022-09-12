@@ -135,7 +135,7 @@ namespace TechJobsOOTests
 
             //verify setup
             Assert.AreNotEqual(mName, mGBD, "Equals method belongs to PositionType class");
-            Assert.AreEqual(lviCount, 2, "Equals method has 2 local variables");
+            Assert.AreEqual(lviCount, 1, "Equals method has 1 local variables");
 
             //verify output
             Assert.AreEqual(testPosition, testPosition, "Objects with Same ID are not Equal");

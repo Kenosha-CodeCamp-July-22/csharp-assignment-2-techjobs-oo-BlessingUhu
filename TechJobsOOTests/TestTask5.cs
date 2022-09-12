@@ -1,4 +1,4 @@
-﻿/*
+﻿
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,7 +7,7 @@ using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TechJobsOO;
 using TechJobsOOAutograded;
-using TechJobsTests;
+using TechJobsTest;
 
 namespace TechJobsOOTests
 {
@@ -129,7 +129,6 @@ namespace TechJobsOOTests
                     break;
                 }
             }
-
             //verify test was created
             Assert.AreEqual("true", existsCheck, "'TestToStringHandlesEmptyField' not created");
 
@@ -156,4 +155,4 @@ namespace TechJobsOOTests
         }
     }
 }
-*/
+
