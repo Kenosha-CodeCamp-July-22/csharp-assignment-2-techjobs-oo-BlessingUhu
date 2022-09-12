@@ -13,6 +13,7 @@ namespace TechJobsOO
         public TechJob(string value) : base(value)
         {
         }
+        public TechJob() { }
 
         public string Name { get; set; }
         public Employer EmployerName { get; set; }
@@ -44,7 +45,7 @@ namespace TechJobsOO
 
         public override string ToString()
         {
-            string NaN = "Data not available";
+            string NaN = "Data Not Available";
 
             if (Name == null || Name == "")
             {
@@ -67,13 +68,12 @@ namespace TechJobsOO
                 JobCoreCompetency.Value = NaN;
             }
 
-            return "\n" + "ID: " + Id.ToString() + "\n" +
+            return "\n" + "ID: " + Id + "\n" +
                     "Name: " + Name + "\n" +
                     "Employer: " + EmployerName.ToString() + "\n" +
                     "Location: " + EmployerLocation.ToString() + "\n" +
                     "Position Type: " + JobType.ToString() + "\n" +
                     "Core Competency: " + JobCoreCompetency.ToString() + "\n";
-
         }
 
     }

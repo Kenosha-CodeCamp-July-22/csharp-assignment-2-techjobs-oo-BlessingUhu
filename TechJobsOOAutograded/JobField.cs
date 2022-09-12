@@ -19,14 +19,20 @@ namespace TechJobsOO
             Value = value;
         }
 
+        public virtual bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
 
-        public abstract bool Equals(object obj);
+        public virtual int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
 
-
-        public abstract int GetHashCode();
-
-        public abstract string ToString();
-
+        public virtual string ToString()
+        {
+            return base.ToString();
+        }
     }
 
 
